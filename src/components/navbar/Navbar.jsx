@@ -15,9 +15,9 @@ function Navbar() {
         <div className="">
           <FaUserAstronaut />
         </div>
-        <div>
+        <Link to="/cart">
           <FaShoppingCart />
-        </div>
+        </Link>
       </div>
     </nav>
   );

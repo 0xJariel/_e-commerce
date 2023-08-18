@@ -4,5 +4,9 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  // plugins: [
+  //   require("@tailwindcss/forms"),
+  //   // ...
+  // ],
+  // plugins: [require("@tailwindcss/aspect-ratio")],
 };
