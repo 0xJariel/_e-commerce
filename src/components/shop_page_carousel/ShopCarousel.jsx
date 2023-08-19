@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export default function ShopCarousel() {
   let [pageNumber, setPageNumber] = useState(1);
@@ -14,9 +14,9 @@ export default function ShopCarousel() {
 
   return (
     <div className="flex mx-auto gap-4 text-4xl">
-      <FaChevronCircleLeft onClick={goToPreviousPage} />
+      <FaChevronLeft onClick={goToPreviousPage} />
       {pageNumber}
-      <FaChevronCircleRight onClick={goToNextPage} />
+      <FaChevronRight onClick={goToNextPage} />
     </div>
   );
 }

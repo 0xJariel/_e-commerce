@@ -1,9 +1,6 @@
-import { useState } from "react";
-import "./App.css";
-import Navbar from "./components/navbar/Navbar";
-import { Outlet } from "react-router-dom";
-import Footer from "./components/footer/Footer";
 import { v4 as uuidv4 } from "uuid";
+import React, { useState } from "react";
+
 import largeBowl from "./assets/Bowls/large_bowl.jpg";
 import smallBowl from "./assets/Bowls/small_bowl.jpg";
 import porcelinMug from "./assets/cups/porcelin_mug.jpg";
@@ -19,10 +16,8 @@ import oliveOilDispenser from "./assets/oil_dispensers/olive_oil_dispenser.webp"
 import soapDispenser from "./assets/Bowls/bowl_set.jpg";
 import plate from "./assets/Bowls/bowl_set.jpg";
 import plate2 from "./assets/Bowls/bowl_set.jpg";
-import plateSet from "./assets/sets/plate_set.jpeg";
-import bowlSet from "./assets/sets/bowl_set.jpeg";
 
-function App() {
+function Products() {
   const [products, setProducts] = useState([
     {
       id: uuidv4(),
@@ -133,45 +128,8 @@ function App() {
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
     },
   ]);
-  const [productSets, setProductSets] = useState([
-    {
-      id: uuidv4(),
-      name: "Bowl Set",
-      href: "#",
-      price: "$12",
-      imageSrc: bowlSet,
-      imageAlt:
-        "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
-    },
-    {
-      id: uuidv4(),
-      name: "Plate Set",
-      href: "#",
-      price: "$22",
-      imageSrc: plateSet,
-      imageAlt:
-        "Olive drab green insulated bottle with flared screw lid and flat top.",
-    },
-  ]);
-  const [displayProduct, setDisplayProduct] = useState(products[11]);
-  const [cart, setCart] = useState([]);
 
-  return (
-    <div className="grid w-full ">
-      <Navbar />
-      <Outlet
-        context={[
-          products,
-          productSets,
-          displayProduct,
-          setDisplayProduct,
-          cart,
-          setCart,
-        ]}
-      />
-      <Footer />
-    </div>
-  );
+  return <div></div>;
 }
 
-export default App;
+export default Products;

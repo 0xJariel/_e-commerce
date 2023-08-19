@@ -1,7 +1,7 @@
 import React from "react";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 
-function Intro() {
+function Intro({ displayProduct }) {
   return (
     <section className="grid grid-cols-2 content-center h-96 gap-10">
       <div className="grid max-w-md content-center justify-self-end">
@@ -14,7 +14,9 @@ function Intro() {
         </div>
         <a className="text-base font-medium underline pt-2">Link Here</a>
       </div>
-      <div className="bg-slate-600 max-w-md content-center h-72"></div>
+      <div className="bg-slate-600 max-w-md content-center h-72">
+        <img src={displayProduct.imageSrc} alt="" />
+      </div>
     </section>
   );
 }
