@@ -27,11 +27,51 @@ function App() {
     {
       id: uuidv4(),
       name: "Small Bowl",
-      href: "#",
       price: "$12",
       imageSrc: smallBowl,
       imageAlt:
         "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
+      rating: 4,
+      images: [
+        {
+          id: 1,
+          name: "Angled view",
+          src: smallBowl,
+          alt: "Angled front view with bag zipped and handles upright.",
+        },
+        // More images...
+      ],
+      colors: [
+        {
+          name: "Washed Black",
+          bgColor: "bg-gray-700",
+          selectedColor: "ring-gray-700",
+        },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        {
+          name: "Washed Gray",
+          bgColor: "bg-gray-500",
+          selectedColor: "ring-gray-500",
+        },
+      ],
+      description: `
+    <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+  `,
+      details: [
+        {
+          name: "Features",
+          items: [
+            "Multiple strap configurations",
+            "Spacious interior with top zip",
+            "Leather handle and tabs",
+            "Interior dividers",
+            "Stainless strap loops",
+            "Double stitched construction",
+            "Water-resistant",
+          ],
+        },
+        // More sections...
+      ],
     },
     {
       id: uuidv4(),
@@ -41,6 +81,47 @@ function App() {
       imageSrc: largeBowl,
       imageAlt:
         "Olive drab green insulated bottle with flared screw lid and flat top.",
+      rating: 4,
+      images: [
+        {
+          id: 1,
+          name: "Angled view",
+          src: largeBowl,
+          alt: "Angled front view with bag zipped and handles upright.",
+        },
+        // More images...
+      ],
+      colors: [
+        {
+          name: "Washed Black",
+          bgColor: "bg-gray-700",
+          selectedColor: "ring-gray-700",
+        },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        {
+          name: "Washed Gray",
+          bgColor: "bg-gray-500",
+          selectedColor: "ring-gray-500",
+        },
+      ],
+      description: `
+    <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+  `,
+      details: [
+        {
+          name: "Features",
+          items: [
+            "Multiple strap configurations",
+            "Spacious interior with top zip",
+            "Leather handle and tabs",
+            "Interior dividers",
+            "Stainless strap loops",
+            "Double stitched construction",
+            "Water-resistant",
+          ],
+        },
+        // More sections...
+      ],
     },
     {
       id: uuidv4(),
@@ -50,6 +131,47 @@ function App() {
       imageSrc: porcelinMug,
       imageAlt:
         "Person using a pen to cross a task off a productivity paper card.",
+      rating: 4,
+      images: [
+        {
+          id: 1,
+          name: "Angled view",
+          src: porcelinMug,
+          alt: "Angled front view with bag zipped and handles upright.",
+        },
+        // More images...
+      ],
+      colors: [
+        {
+          name: "Washed Black",
+          bgColor: "bg-gray-700",
+          selectedColor: "ring-gray-700",
+        },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        {
+          name: "Washed Gray",
+          bgColor: "bg-gray-500",
+          selectedColor: "ring-gray-500",
+        },
+      ],
+      description: `
+          <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+        `,
+      details: [
+        {
+          name: "Features",
+          items: [
+            "Multiple strap configurations",
+            "Spacious interior with top zip",
+            "Leather handle and tabs",
+            "Interior dividers",
+            "Stainless strap loops",
+            "Double stitched construction",
+            "Water-resistant",
+          ],
+        },
+        // More sections...
+      ],
     },
     {
       id: uuidv4(),
@@ -59,6 +181,47 @@ function App() {
       imageSrc: earthMug,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
+      rating: 4,
+      images: [
+        {
+          id: 1,
+          name: "Angled view",
+          src: earthMug,
+          alt: "Angled front view with bag zipped and handles upright.",
+        },
+        // More images...
+      ],
+      colors: [
+        {
+          name: "Washed Black",
+          bgColor: "bg-gray-700",
+          selectedColor: "ring-gray-700",
+        },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        {
+          name: "Washed Gray",
+          bgColor: "bg-gray-500",
+          selectedColor: "ring-gray-500",
+        },
+      ],
+      description: `
+          <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+        `,
+      details: [
+        {
+          name: "Features",
+          items: [
+            "Multiple strap configurations",
+            "Spacious interior with top zip",
+            "Leather handle and tabs",
+            "Interior dividers",
+            "Stainless strap loops",
+            "Double stitched construction",
+            "Water-resistant",
+          ],
+        },
+        // More sections...
+      ],
     },
     {
       id: uuidv4(),
@@ -68,6 +231,47 @@ function App() {
       imageSrc: utensilsCup,
       imageAlt:
         "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
+      rating: 4,
+      images: [
+        {
+          id: 1,
+          name: "Angled view",
+          src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+          alt: "Angled front view with bag zipped and handles upright.",
+        },
+        // More images...
+      ],
+      colors: [
+        {
+          name: "Washed Black",
+          bgColor: "bg-gray-700",
+          selectedColor: "ring-gray-700",
+        },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        {
+          name: "Washed Gray",
+          bgColor: "bg-gray-500",
+          selectedColor: "ring-gray-500",
+        },
+      ],
+      description: `
+          <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+        `,
+      details: [
+        {
+          name: "Features",
+          items: [
+            "Multiple strap configurations",
+            "Spacious interior with top zip",
+            "Leather handle and tabs",
+            "Interior dividers",
+            "Stainless strap loops",
+            "Double stitched construction",
+            "Water-resistant",
+          ],
+        },
+        // More sections...
+      ],
     },
     {
       id: uuidv4(),
@@ -77,6 +281,47 @@ function App() {
       imageSrc: garlicScraper,
       imageAlt:
         "Olive drab green insulated bottle with flared screw lid and flat top.",
+      rating: 4,
+      images: [
+        {
+          id: 1,
+          name: "Angled view",
+          src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+          alt: "Angled front view with bag zipped and handles upright.",
+        },
+        // More images...
+      ],
+      colors: [
+        {
+          name: "Washed Black",
+          bgColor: "bg-gray-700",
+          selectedColor: "ring-gray-700",
+        },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        {
+          name: "Washed Gray",
+          bgColor: "bg-gray-500",
+          selectedColor: "ring-gray-500",
+        },
+      ],
+      description: `
+          <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+        `,
+      details: [
+        {
+          name: "Features",
+          items: [
+            "Multiple strap configurations",
+            "Spacious interior with top zip",
+            "Leather handle and tabs",
+            "Interior dividers",
+            "Stainless strap loops",
+            "Double stitched construction",
+            "Water-resistant",
+          ],
+        },
+        // More sections...
+      ],
     },
     {
       id: uuidv4(),
@@ -86,6 +331,47 @@ function App() {
       imageSrc: spicePummel,
       imageAlt:
         "Person using a pen to cross a task off a productivity paper card.",
+      rating: 4,
+      images: [
+        {
+          id: 1,
+          name: "Angled view",
+          src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+          alt: "Angled front view with bag zipped and handles upright.",
+        },
+        // More images...
+      ],
+      colors: [
+        {
+          name: "Washed Black",
+          bgColor: "bg-gray-700",
+          selectedColor: "ring-gray-700",
+        },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        {
+          name: "Washed Gray",
+          bgColor: "bg-gray-500",
+          selectedColor: "ring-gray-500",
+        },
+      ],
+      description: `
+          <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+        `,
+      details: [
+        {
+          name: "Features",
+          items: [
+            "Multiple strap configurations",
+            "Spacious interior with top zip",
+            "Leather handle and tabs",
+            "Interior dividers",
+            "Stainless strap loops",
+            "Double stitched construction",
+            "Water-resistant",
+          ],
+        },
+        // More sections...
+      ],
     },
     {
       id: uuidv4(),
@@ -95,6 +381,47 @@ function App() {
       imageSrc: saltCellar,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
+      rating: 4,
+      images: [
+        {
+          id: 1,
+          name: "Angled view",
+          src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+          alt: "Angled front view with bag zipped and handles upright.",
+        },
+        // More images...
+      ],
+      colors: [
+        {
+          name: "Washed Black",
+          bgColor: "bg-gray-700",
+          selectedColor: "ring-gray-700",
+        },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        {
+          name: "Washed Gray",
+          bgColor: "bg-gray-500",
+          selectedColor: "ring-gray-500",
+        },
+      ],
+      description: `
+          <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+        `,
+      details: [
+        {
+          name: "Features",
+          items: [
+            "Multiple strap configurations",
+            "Spacious interior with top zip",
+            "Leather handle and tabs",
+            "Interior dividers",
+            "Stainless strap loops",
+            "Double stitched construction",
+            "Water-resistant",
+          ],
+        },
+        // More sections...
+      ],
     },
     {
       id: uuidv4(),
@@ -104,6 +431,47 @@ function App() {
       imageSrc: angledSaltCellar,
       imageAlt:
         "Olive drab green insulated bottle with flared screw lid and flat top.",
+      rating: 4,
+      images: [
+        {
+          id: 1,
+          name: "Angled view",
+          src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+          alt: "Angled front view with bag zipped and handles upright.",
+        },
+        // More images...
+      ],
+      colors: [
+        {
+          name: "Washed Black",
+          bgColor: "bg-gray-700",
+          selectedColor: "ring-gray-700",
+        },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        {
+          name: "Washed Gray",
+          bgColor: "bg-gray-500",
+          selectedColor: "ring-gray-500",
+        },
+      ],
+      description: `
+          <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+        `,
+      details: [
+        {
+          name: "Features",
+          items: [
+            "Multiple strap configurations",
+            "Spacious interior with top zip",
+            "Leather handle and tabs",
+            "Interior dividers",
+            "Stainless strap loops",
+            "Double stitched construction",
+            "Water-resistant",
+          ],
+        },
+        // More sections...
+      ],
     },
     {
       id: uuidv4(),
@@ -113,6 +481,47 @@ function App() {
       imageSrc: saltAndPepperCellars,
       imageAlt:
         "Person using a pen to cross a task off a productivity paper card.",
+      rating: 4,
+      images: [
+        {
+          id: 1,
+          name: "Angled view",
+          src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+          alt: "Angled front view with bag zipped and handles upright.",
+        },
+        // More images...
+      ],
+      colors: [
+        {
+          name: "Washed Black",
+          bgColor: "bg-gray-700",
+          selectedColor: "ring-gray-700",
+        },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        {
+          name: "Washed Gray",
+          bgColor: "bg-gray-500",
+          selectedColor: "ring-gray-500",
+        },
+      ],
+      description: `
+          <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+        `,
+      details: [
+        {
+          name: "Features",
+          items: [
+            "Multiple strap configurations",
+            "Spacious interior with top zip",
+            "Leather handle and tabs",
+            "Interior dividers",
+            "Stainless strap loops",
+            "Double stitched construction",
+            "Water-resistant",
+          ],
+        },
+        // More sections...
+      ],
     },
     {
       id: uuidv4(),
@@ -122,6 +531,47 @@ function App() {
       imageSrc: oilAndVinegarDispenser,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
+      rating: 4,
+      images: [
+        {
+          id: 1,
+          name: "Angled view",
+          src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+          alt: "Angled front view with bag zipped and handles upright.",
+        },
+        // More images...
+      ],
+      colors: [
+        {
+          name: "Washed Black",
+          bgColor: "bg-gray-700",
+          selectedColor: "ring-gray-700",
+        },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        {
+          name: "Washed Gray",
+          bgColor: "bg-gray-500",
+          selectedColor: "ring-gray-500",
+        },
+      ],
+      description: `
+          <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+        `,
+      details: [
+        {
+          name: "Features",
+          items: [
+            "Multiple strap configurations",
+            "Spacious interior with top zip",
+            "Leather handle and tabs",
+            "Interior dividers",
+            "Stainless strap loops",
+            "Double stitched construction",
+            "Water-resistant",
+          ],
+        },
+        // More sections...
+      ],
     },
     {
       id: uuidv4(),
@@ -131,8 +581,50 @@ function App() {
       imageSrc: oliveOilDispenser,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
+      rating: 4,
+      images: [
+        {
+          id: 1,
+          name: "Angled view",
+          src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+          alt: "Angled front view with bag zipped and handles upright.",
+        },
+        // More images...
+      ],
+      colors: [
+        {
+          name: "Washed Black",
+          bgColor: "bg-gray-700",
+          selectedColor: "ring-gray-700",
+        },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        {
+          name: "Washed Gray",
+          bgColor: "bg-gray-500",
+          selectedColor: "ring-gray-500",
+        },
+      ],
+      description: `
+          <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+        `,
+      details: [
+        {
+          name: "Features",
+          items: [
+            "Multiple strap configurations",
+            "Spacious interior with top zip",
+            "Leather handle and tabs",
+            "Interior dividers",
+            "Stainless strap loops",
+            "Double stitched construction",
+            "Water-resistant",
+          ],
+        },
+        // More sections...
+      ],
     },
   ]);
+
   const [productSets, setProductSets] = useState([
     {
       id: uuidv4(),
@@ -142,6 +634,47 @@ function App() {
       imageSrc: bowlSet,
       imageAlt:
         "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
+      rating: 4,
+      images: [
+        {
+          id: 1,
+          name: "Angled view",
+          src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+          alt: "Angled front view with bag zipped and handles upright.",
+        },
+        // More images...
+      ],
+      colors: [
+        {
+          name: "Washed Black",
+          bgColor: "bg-gray-700",
+          selectedColor: "ring-gray-700",
+        },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        {
+          name: "Washed Gray",
+          bgColor: "bg-gray-500",
+          selectedColor: "ring-gray-500",
+        },
+      ],
+      description: `
+          <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+        `,
+      details: [
+        {
+          name: "Features",
+          items: [
+            "Multiple strap configurations",
+            "Spacious interior with top zip",
+            "Leather handle and tabs",
+            "Interior dividers",
+            "Stainless strap loops",
+            "Double stitched construction",
+            "Water-resistant",
+          ],
+        },
+        // More sections...
+      ],
     },
     {
       id: uuidv4(),
@@ -151,8 +684,50 @@ function App() {
       imageSrc: plateSet,
       imageAlt:
         "Olive drab green insulated bottle with flared screw lid and flat top.",
+      rating: 4,
+      images: [
+        {
+          id: 1,
+          name: "Angled view",
+          src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+          alt: "Angled front view with bag zipped and handles upright.",
+        },
+        // More images...
+      ],
+      colors: [
+        {
+          name: "Washed Black",
+          bgColor: "bg-gray-700",
+          selectedColor: "ring-gray-700",
+        },
+        { name: "White", bgColor: "bg-white", selectedColor: "ring-gray-400" },
+        {
+          name: "Washed Gray",
+          bgColor: "bg-gray-500",
+          selectedColor: "ring-gray-500",
+        },
+      ],
+      description: `
+          <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+        `,
+      details: [
+        {
+          name: "Features",
+          items: [
+            "Multiple strap configurations",
+            "Spacious interior with top zip",
+            "Leather handle and tabs",
+            "Interior dividers",
+            "Stainless strap loops",
+            "Double stitched construction",
+            "Water-resistant",
+          ],
+        },
+        // More sections...
+      ],
     },
   ]);
+
   const [displayProduct, setDisplayProduct] = useState(products[11]);
   const [cart, setCart] = useState([]);
 
