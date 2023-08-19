@@ -58,16 +58,22 @@ function classNames(...classes) {
 
 export default function Product() {
   const { name } = useParams();
-  const [products, productSets, , , , setCart] = useOutletContext();
+  const [products, productSets, , , cart, setCart] = useOutletContext();
 
   const product = products.find((x) => {
     return x.id === name;
   });
 
+  // confused about how to add a different variable that's not the default e
   const addToBag = (e) => {
     e.preventDefault();
-    console.log(e);
-    console.log(product);
+    const productID = product.id;
+    const currentCart = [...cart];
+    // if this item exists add qty by 1
+
+    const currentProduct = currentCart.find((x) => {
+      return x.id === name;
+    });
   };
 
   console.log(products[0].id == name);

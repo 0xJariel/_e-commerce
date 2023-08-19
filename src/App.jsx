@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import { Outlet } from "react-router-dom";
@@ -730,6 +730,32 @@ function App() {
 
   const [displayProduct, setDisplayProduct] = useState(products[11]);
   const [cart, setCart] = useState([]);
+
+  //for demo purposes
+  const setInitialCartState = () => {
+    // this way because i gave them dynamic ids
+    const demoCart = [];
+    for (let i = 0; i < 3; i++) {
+      demoCart.push(createCartItem(product[i]));
+    }
+    setCart(demoCart);
+  };
+
+  const createCartItem = (product) => {
+    return {
+      name: product.name,
+      id: product.id,
+      qty: 0,
+      price: product.price,
+      imageSrc: product.imageSrc,
+      imageAlt: product.imageAlt,
+      description: product.description,
+    };
+  };
+
+  useEffect(() => {
+    setInitialCartState();
+  });
 
   return (
     <div className="grid w-full ">
