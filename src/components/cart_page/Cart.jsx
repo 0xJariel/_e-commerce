@@ -19,47 +19,11 @@ import {
   QuestionMarkCircleIcon,
   XMarkIcon,
 } from "@heroicons/react/20/solid";
-
-const products = [
-  {
-    id: 1,
-    name: "Basic Tee",
-    href: "#",
-    price: "$32.00",
-    color: "Sienna",
-    inStock: true,
-    size: "Large",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-01-product-01.jpg",
-    imageAlt: "Front of men's Basic Tee in sienna.",
-  },
-  {
-    id: 2,
-    name: "Basic Tee",
-    href: "#",
-    price: "$32.00",
-    color: "Black",
-    inStock: false,
-    leadTime: "3–4 weeks",
-    size: "Large",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-01-product-02.jpg",
-    imageAlt: "Front of men's Basic Tee in black.",
-  },
-  {
-    id: 3,
-    name: "Nomad Tumbler",
-    href: "#",
-    price: "$35.00",
-    color: "White",
-    inStock: true,
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-01-product-03.jpg",
-    imageAlt: "Insulated bottle with white base and black snap lid.",
-  },
-];
+import { useOutletContext } from "react-router-dom";
 
 export default function Cart() {
+  const [, , , , cart, setCart] = useOutletContext();
+
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 pb-24 pt-16 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -76,7 +40,7 @@ export default function Cart() {
               role="list"
               className="divide-y divide-gray-200 border-b border-t border-gray-200"
             >
-              {products.map((product, productIdx) => (
+              {cart.map((product, productIdx) => (
                 <li key={product.id} className="flex py-6 sm:py-10">
                   <div className="flex-shrink-0">
                     <img
@@ -99,14 +63,7 @@ export default function Cart() {
                             </a>
                           </h3>
                         </div>
-                        <div className="mt-1 flex text-sm">
-                          <p className="text-gray-500">{product.color}</p>
-                          {product.size ? (
-                            <p className="ml-4 border-l border-gray-200 pl-4 text-gray-500">
-                              {product.size}
-                            </p>
-                          ) : null}
-                        </div>
+
                         <p className="mt-1 text-sm font-medium text-gray-900">
                           {product.price}
                         </p>
