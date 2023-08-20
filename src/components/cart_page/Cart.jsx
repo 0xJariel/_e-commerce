@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 /*
   This example requires some changes to your config:
   
@@ -23,20 +23,39 @@ import { useOutletContext } from "react-router-dom";
 
 export default function Cart() {
   const [, , , , cart, setCart] = useOutletContext();
+  const [subTotal, setSubTotal] = useState(0);
+  const [shippingEstimate, setShippingEstimate] = useState(0);
+  const [taxEstimate, setTaxEstimate] = useState(0);
+  const [orderTotal, setOrderTotal] = useState(0);
 
-  const createCartItem = (product) => {
-    return {
-      name: product.name,
-      id: product.id,
-      qty: 0,
-      price: product.price,
-      imageSrc: product.imageSrc,
-      imageAlt: product.imageAlt,
-      description: product.description,
-    };
+  useEffect(() => {
+    updateSubtotal();
+    updateShippingEstimate();
+    updateTaxEstimate();
+    updateOrderTotal();
+  }, [cart]);
+
+  const updateSubtotal = () => {
+    const subTotal = cart.reduce((accumulator, currentItem) => {
+      const itemCost = currentItem.price * currentItem.qty;
+      console.log(currentItem, currentItem.price, currentItem.qty);
+      return accumulator + itemCost;
+    }, 0);
+
+    setSubTotal(subTotal);
   };
 
-  const removeCartItem = () => {};
+  const updateShippingEstimate = () => {};
+  const updateTaxEstimate = () => {};
+  const updateOrderTotal = () => {};
+
+  const deleteItem = (e, id) => {
+    console.log(e, id);
+    const tempCart = [...cart];
+    const updatedItems = tempCart.filter((item) => item.id !== id);
+    setCart(updatedItems);
+    // use item id to remove that item from 'cart'
+  };
 
   return (
     <div className="bg-white">
@@ -79,7 +98,7 @@ export default function Cart() {
                         </div>
 
                         <p className="mt-1 text-sm font-medium text-gray-900">
-                          {product.price}
+                          ${product.price}
                         </p>
                       </div>
 
@@ -107,6 +126,9 @@ export default function Cart() {
 
                         <div className="absolute right-0 top-0">
                           <button
+                            onClick={(e) => {
+                              deleteItem(e, product.id);
+                            }}
                             type="button"
                             className="-m-2 inline-flex p-2 text-gray-400 hover:text-gray-500"
                           >
@@ -157,7 +179,9 @@ export default function Cart() {
             <dl className="mt-6 space-y-4">
               <div className="flex items-center justify-between">
                 <dt className="text-sm text-gray-600">Subtotal</dt>
-                <dd className="text-sm font-medium text-gray-900">$99.00</dd>
+                <dd className="text-sm font-medium text-gray-900">
+                  {subTotal && `$${subTotal}`}
+                </dd>
               </div>
               <div className="flex items-center justify-between border-t border-gray-200 pt-4">
                 <dt className="flex items-center text-sm text-gray-600">
@@ -175,7 +199,9 @@ export default function Cart() {
                     />
                   </a>
                 </dt>
-                <dd className="text-sm font-medium text-gray-900">$5.00</dd>
+                <dd className="text-sm font-medium text-gray-900">
+                  {shippingEstimate && `$${shippingEstimate}`}
+                </dd>
               </div>
               <div className="flex items-center justify-between border-t border-gray-200 pt-4">
                 <dt className="flex text-sm text-gray-600">
@@ -193,13 +219,17 @@ export default function Cart() {
                     />
                   </a>
                 </dt>
-                <dd className="text-sm font-medium text-gray-900">$8.32</dd>
+                <dd className="text-sm font-medium text-gray-900">
+                  {taxEstimate && `$${taxEstimate}`}
+                </dd>
               </div>
               <div className="flex items-center justify-between border-t border-gray-200 pt-4">
                 <dt className="text-base font-medium text-gray-900">
                   Order total
                 </dt>
-                <dd className="text-base font-medium text-gray-900">$112.32</dd>
+                <dd className="text-base font-medium text-gray-900">
+                  {orderTotal && `$${orderTotal}`}
+                </dd>
               </div>
             </dl>
 

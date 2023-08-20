@@ -27,7 +27,7 @@ function App() {
     {
       id: uuidv4(),
       name: "Small Bowl",
-      price: "$12",
+      price: 12,
       imageSrc: smallBowl,
       imageAlt:
         "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
@@ -77,7 +77,7 @@ function App() {
       id: uuidv4(),
       name: "Large Bowl",
       href: "#",
-      price: "$22",
+      price: 22,
       imageSrc: largeBowl,
       imageAlt:
         "Olive drab green insulated bottle with flared screw lid and flat top.",
@@ -127,7 +127,7 @@ function App() {
       id: uuidv4(),
       name: "Porcelin Mug",
       href: "#",
-      price: "$89",
+      price: 89,
       imageSrc: porcelinMug,
       imageAlt:
         "Person using a pen to cross a task off a productivity paper card.",
@@ -177,7 +177,7 @@ function App() {
       id: uuidv4(),
       name: "Earth Mug",
       href: "#",
-      price: "$35",
+      price: 35,
       imageSrc: earthMug,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
@@ -227,7 +227,7 @@ function App() {
       id: uuidv4(),
       name: "Utensils Cup",
       href: "#",
-      price: "$48",
+      price: 48,
       imageSrc: utensilsCup,
       imageAlt:
         "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
@@ -277,7 +277,7 @@ function App() {
       id: uuidv4(),
       name: "Garlic Scraper",
       href: "#",
-      price: "$35",
+      price: 35,
       imageSrc: garlicScraper,
       imageAlt:
         "Olive drab green insulated bottle with flared screw lid and flat top.",
@@ -327,7 +327,7 @@ function App() {
       id: uuidv4(),
       name: "Spice Pummel",
       href: "#",
-      price: "$89",
+      price: 89,
       imageSrc: spicePummel,
       imageAlt:
         "Person using a pen to cross a task off a productivity paper card.",
@@ -377,7 +377,7 @@ function App() {
       id: uuidv4(),
       name: "Earthy Salt Cellar",
       href: "#",
-      price: "$35",
+      price: 35,
       imageSrc: saltCellar,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
@@ -427,7 +427,7 @@ function App() {
       id: uuidv4(),
       name: "Angled Salt Cellar",
       href: "#",
-      price: "$35",
+      price: 35,
       imageSrc: angledSaltCellar,
       imageAlt:
         "Olive drab green insulated bottle with flared screw lid and flat top.",
@@ -477,7 +477,7 @@ function App() {
       id: uuidv4(),
       name: "Salt and Pepper Cellars",
       href: "#",
-      price: "$89",
+      price: 89,
       imageSrc: saltAndPepperCellars,
       imageAlt:
         "Person using a pen to cross a task off a productivity paper card.",
@@ -527,7 +527,7 @@ function App() {
       id: uuidv4(),
       name: "Stacked Oil and Vinegar Dispensars",
       href: "#",
-      price: "$35",
+      price: 35,
       imageSrc: oilAndVinegarDispenser,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
@@ -577,7 +577,7 @@ function App() {
       id: uuidv4(),
       name: "Earthy Olive Oil Dispenser",
       href: "#",
-      price: "$35",
+      price: 35,
       imageSrc: oliveOilDispenser,
       imageAlt:
         "Hand holding black machined steel mechanical pencil with brass tip and top.",
@@ -630,7 +630,7 @@ function App() {
       id: uuidv4(),
       name: "Bowl Set",
       href: "#",
-      price: "$12",
+      price: 12,
       imageSrc: bowlSet,
       imageAlt:
         "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
@@ -680,7 +680,7 @@ function App() {
       id: uuidv4(),
       name: "Plate Set",
       href: "#",
-      price: "$22",
+      price: 22,
       imageSrc: plateSet,
       imageAlt:
         "Olive drab green insulated bottle with flared screw lid and flat top.",
@@ -753,7 +753,6 @@ function App() {
     }
     setCart(demoCart);
   };
-
   useEffect(() => {
     setInitialCartState();
   }, []);
