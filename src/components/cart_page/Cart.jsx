@@ -24,6 +24,20 @@ import { useOutletContext } from "react-router-dom";
 export default function Cart() {
   const [, , , , cart, setCart] = useOutletContext();
 
+  const createCartItem = (product) => {
+    return {
+      name: product.name,
+      id: product.id,
+      qty: 0,
+      price: product.price,
+      imageSrc: product.imageSrc,
+      imageAlt: product.imageAlt,
+      description: product.description,
+    };
+  };
+
+  const removeCartItem = () => {};
+
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 pb-24 pt-16 sm:px-6 lg:max-w-7xl lg:px-8">

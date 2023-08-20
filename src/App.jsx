@@ -731,31 +731,32 @@ function App() {
   const [displayProduct, setDisplayProduct] = useState(products[11]);
   const [cart, setCart] = useState([]);
 
-  //for demo purposes
-  const setInitialCartState = () => {
-    // this way because i gave them dynamic ids
-    const demoCart = [];
-    for (let i = 0; i < 3; i++) {
-      demoCart.push(createCartItem(product[i]));
-    }
-    setCart(demoCart);
-  };
-
+  // for demo purposes
+  // should have used vitest on react component instead
+  // duplicate code > product.jsx
   const createCartItem = (product) => {
     return {
       name: product.name,
       id: product.id,
-      qty: 0,
+      qty: 1,
       price: product.price,
       imageSrc: product.imageSrc,
       imageAlt: product.imageAlt,
       description: product.description,
     };
   };
+  const setInitialCartState = () => {
+    // this way because i gave them dynamic ids
+    const demoCart = [];
+    for (let i = 0; i < 3; i++) {
+      demoCart.push(createCartItem(products[i]));
+    }
+    setCart(demoCart);
+  };
 
   useEffect(() => {
     setInitialCartState();
-  });
+  }, []);
 
   return (
     <div className="grid w-full ">

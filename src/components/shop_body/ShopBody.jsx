@@ -10,7 +10,7 @@ function ShopBody({ products }) {
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (
             <Link
-              to="/product"
+              to={`/product/${product.id}`}
               key={product.id}
               href={product.href}
               className="group"

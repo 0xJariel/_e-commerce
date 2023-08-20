@@ -65,19 +65,39 @@ export default function Product() {
   });
 
   // confused about how to add a different variable that's not the default e
+  //
   const addToBag = (e) => {
     e.preventDefault();
-    const productID = product.id;
+    console.log("added to bag");
     const currentCart = [...cart];
-    // if this item exists add qty by 1
 
     const currentProduct = currentCart.find((x) => {
       return x.id === name;
     });
+
+    if (currentProduct) {
+      currentProduct.qty++;
+      setCart(currentCart);
+      console.log(currentCart);
+      return;
+      //setCart > add to that items count
+    }
+    currentCart.push(createCartItem(product));
+    setCart(currentCart);
+    console.log(currentCart);
   };
 
-  console.log(products[0].id == name);
-  console.log(product.id);
+  const createCartItem = (product) => {
+    return {
+      name: product.name,
+      id: product.id,
+      qty: 1,
+      price: product.price,
+      imageSrc: product.imageSrc,
+      imageAlt: product.imageAlt,
+      description: product.description,
+    };
+  };
 
   // const [selectedColor, setSelectedColor] = useState(product.colors[0]);
 
