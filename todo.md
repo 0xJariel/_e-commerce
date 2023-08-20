@@ -7,6 +7,7 @@
 - remove or create blog post page
 - shop carousel, change pages -limit page to x items-
 - subscribe newsletter form validation , sent notification
+- add qty option in product page
 - footer links to funny 404
 
 # Fixes
