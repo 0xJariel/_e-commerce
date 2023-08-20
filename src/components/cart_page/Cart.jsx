@@ -24,7 +24,7 @@ import { useOutletContext } from "react-router-dom";
 export default function Cart() {
   const [, , , , cart, setCart] = useOutletContext();
   const [subTotal, setSubTotal] = useState(0);
-  const [shippingEstimate, setShippingEstimate] = useState(0);
+  const [shippingEstimate, setShippingEstimate] = useState(10);
   const [taxEstimate, setTaxEstimate] = useState(0);
   const [orderTotal, setOrderTotal] = useState(0);
 
@@ -33,7 +33,7 @@ export default function Cart() {
     updateShippingEstimate();
     updateTaxEstimate();
     updateOrderTotal();
-  }, [cart]);
+  }, [cart, subTotal]);
 
   const updateSubtotal = () => {
     const subTotal = cart.reduce((accumulator, currentItem) => {
@@ -46,8 +46,19 @@ export default function Cart() {
   };
 
   const updateShippingEstimate = () => {};
-  const updateTaxEstimate = () => {};
-  const updateOrderTotal = () => {};
+
+  const updateTaxEstimate = () => {
+    const taxAmount = subTotal * 0.07;
+    const formattedTaxAmount = parseFloat(taxAmount.toFixed(2));
+    setTaxEstimate(formattedTaxAmount);
+  };
+
+  const updateOrderTotal = () => {
+    const total = taxEstimate + shippingEstimate + subTotal;
+    console.log(subTotal, taxEstimate, shippingEstimate);
+    const formattedTotal = total.toFixed(2);
+    setOrderTotal(total);
+  };
 
   const deleteItem = (e, id) => {
     console.log(e, id);

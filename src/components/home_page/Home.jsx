@@ -15,7 +15,7 @@ function Home() {
       <Intro displayProduct={displayProduct} />
       <Highlights productSets={productSets} />
       <Popular products={products} />
-      <Blog />
+      {/* <Blog /> */}
     </>
   );
 }
