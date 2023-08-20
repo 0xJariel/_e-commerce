@@ -205,6 +205,7 @@ export default function Product() {
                 >
                   Add to bag
                 </button>
+                <input type="number"></input>
               </div>
             </form>
 
