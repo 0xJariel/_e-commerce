@@ -12,9 +12,9 @@ function Navbar() {
       </div>
       <div className="grid justify-center align-bottom underline">FURNITTO</div>
       <div className="flex gap-2 justify-end ">
-        <div className="">
+        {/* <div className="">
           <FaUserAstronaut />
-        </div>
+        </div> */}
         <Link to="/cart">
           <FaShoppingCart />
         </Link>
