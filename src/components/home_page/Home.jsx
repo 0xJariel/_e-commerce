@@ -7,7 +7,7 @@ import { useOutletContext } from "react-router-dom";
 
 function Home() {
   //must be extracted in the order they are first made.
-  // names are irrelevant
+  //names are irrelevant
   const [products, productSets, displayProduct] = useOutletContext();
 
   return (

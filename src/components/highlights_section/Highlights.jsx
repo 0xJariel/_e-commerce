@@ -2,7 +2,7 @@ import React from "react";
 
 function Highlights({ productSets }) {
   return (
-    <section className="grid grid-cols-2  h-96 bg-red-200 gap-6 mx-auto px-4">
+    <section className="grid grid-cols-2  h-96  gap-6 mx-auto px-4">
       <div className="max-w-xl w-full justify-self-end l h-96 bg-slate-600">
         <img src={productSets[0].imageSrc} alt="" />
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 function CategoryFilter() {
   return (
-    <div>
+    <div className="flex gap-8 justify-center pt-24 pb-8">
       <div>All Products</div>
       <div>Vases</div>
       <div>Cups</div>

@@ -745,6 +745,7 @@ function App() {
       description: product.description,
     };
   };
+
   const setInitialCartState = () => {
     // this way because i gave them dynamic ids
     const demoCart = [];
@@ -759,7 +760,7 @@ function App() {
 
   return (
     <div className="grid w-full ">
-      <Navbar />
+      <Navbar cart={cart} />
       <Outlet
         context={[
           products,

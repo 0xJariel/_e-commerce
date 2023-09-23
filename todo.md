@@ -1,10 +1,10 @@
 # Missing tickets
 
-- Shipping estimate
-- Tax estimate
-- Order Total estimate
+- Shipping estimate ✔
+- Tax estimate ✔
+- Order Total estimate ✔
 - notification to know item has been added to cart
-- remove or create blog post page
+- remove or create blog post page ✔
 - shop carousel, change pages -limit page to x items-
 - subscribe newsletter form validation , sent notification
 - add qty option in product page

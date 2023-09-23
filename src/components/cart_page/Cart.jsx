@@ -123,7 +123,9 @@ export default function Cart() {
                           Quantity, {product.name}
                         </label>
                         <select
-                          onChange={setQuantity}
+                          onChange={(e) => {
+                            setQuantity(e.target.value);
+                          }}
                           value={product.qty}
                           id={`quantity-${productIdx}`}
                           name={`quantity-${productIdx}`}

@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineShoppingCart, AiOutlineProfile } from "react-icons/ai";
 import { FaShoppingCart, FaUserAstronaut } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ cart }) {
+  const [cartQty, setCartQty] = useState();
+
+  useEffect(() => {
+    setCartQty(cart.length);
+  }, [cart]);
+
   return (
     <nav className="grid grid-cols-3 w-full font-semibold font text-xl pt-8 max-w-6xl justify-self-center">
       <div className="flex gap-4 align-bottom">
@@ -15,8 +21,9 @@ function Navbar() {
         {/* <div className="">
           <FaUserAstronaut />
         </div> */}
-        <Link to="/cart">
+        <Link to="/cart" className="flex">
           <FaShoppingCart />
+          {cartQty && <div>{cart.length}</div>}
         </Link>
       </div>
     </nav>

@@ -14,7 +14,7 @@ function Intro({ displayProduct }) {
         </div>
         <a className="text-base font-medium underline pt-2">Link Here</a>
       </div>
-      <div className="bg-slate-600 max-w-md content-center h-72">
+      <div className="bg-slate-600 max-w-md content-center h-72 overflow-hidden">
         <img src={displayProduct.imageSrc} alt="" />
       </div>
     </section>

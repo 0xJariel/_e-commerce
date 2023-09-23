@@ -59,6 +59,8 @@ function classNames(...classes) {
 export default function Product() {
   const { name } = useParams();
   const [products, productSets, , , cart, setCart] = useOutletContext();
+  const [qty, setQty] = useState(1);
+  console.log(qty);
 
   const product = products.find((x) => {
     return x.id === name;
@@ -66,7 +68,7 @@ export default function Product() {
 
   // confused about how to add a different variable that's not the default e
   //
-  const addToBag = (e) => {
+  const addToBag = (e, qty) => {
     e.preventDefault();
     console.log("added to bag");
     const currentCart = [...cart];
@@ -76,7 +78,7 @@ export default function Product() {
     });
 
     if (currentProduct) {
-      currentProduct.qty++;
+      qty ? (currentProduct.qty += Number(qty)) : currentProduct.qty++;
       setCart(currentCart);
       console.log(currentCart);
       return;
@@ -199,13 +201,22 @@ export default function Product() {
             <form className="mt-6">
               <div className="mt-10 flex">
                 <button
-                  onClick={addToBag}
+                  onClick={(e) => {
+                    addToBag(e, qty);
+                  }}
                   type="submit"
                   className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                 >
                   Add to bag
                 </button>
-                <input type="number"></input>
+                <input
+                  className="flex pl-12 justify-end "
+                  type="number"
+                  defaultValue={1}
+                  onChange={(e) => {
+                    setQty(e.target.value);
+                  }}
+                ></input>
               </div>
             </form>
 
