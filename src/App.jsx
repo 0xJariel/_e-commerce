@@ -7,8 +7,7 @@ import { v4 as uuidv4 } from "uuid";
 import soapDispenser from "./assets/Bowls/bowl_set.jpg";
 import plate from "./assets/Bowls/bowl_set.jpg";
 import plate2 from "./assets/Bowls/bowl_set.jpg";
-import plateSet from "./assets/sets/plate_set.jpeg";
-import bowlSet from "./assets/sets/bowl_set.jpeg";
+
 import getData from "./data/data";
 
 function App() {
