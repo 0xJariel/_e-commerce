@@ -11,7 +11,7 @@ function Shop() {
     <>
       <CategoryFilter />
       <ShopBody products={products} />
-      <ShopCarousel />
+      {/* <ShopCarousel /> */}
     </>
   );
 }

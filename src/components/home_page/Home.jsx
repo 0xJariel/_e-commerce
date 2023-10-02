@@ -13,7 +13,7 @@ function Home() {
   return (
     <>
       <Intro displayProduct={displayProduct} />
-      <Highlights productSets={productSets} />
+      {/* <Highlights productSets={productSets} /> */}
       <Popular products={products} />
       {/* <Blog /> */}
     </>

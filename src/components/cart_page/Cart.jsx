@@ -33,7 +33,13 @@ export default function Cart() {
     updateShippingEstimate();
     updateTaxEstimate();
     updateOrderTotal();
-  }, [cart, subTotal]);
+  }, [cart, subTotal, shippingEstimate, taxEstimate]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setCart([]);
+    console.log(cart);
+  };
 
   const updateSubtotal = () => {
     const subTotal = cart.reduce((accumulator, currentItem) => {
@@ -45,9 +51,13 @@ export default function Cart() {
     setSubTotal(subTotal);
   };
 
-  const setQuantity = () => {};
-
-  const updateShippingEstimate = () => {};
+  const updateShippingEstimate = () => {
+    if (cart.length === 0) {
+      setShippingEstimate(0);
+    } else {
+      setShippingEstimate(10);
+    }
+  };
 
   const updateTaxEstimate = () => {
     const taxAmount = subTotal * 0.07;
@@ -124,7 +134,12 @@ export default function Cart() {
                         </label>
                         <select
                           onChange={(e) => {
-                            setQuantity(e.target.value);
+                            console.log(e.target);
+                            console.log(product);
+                            // create a new list of objects
+                            const newCart = [...cart];
+                            newCart[productIdx].qty = e.target.value;
+                            setCart(newCart);
                           }}
                           value={product.qty}
                           id={`quantity-${productIdx}`}
@@ -252,7 +267,8 @@ export default function Cart() {
 
             <div className="mt-6">
               <button
-                type="submit"
+                onClick={handleSubmit}
+                // type="submit"
                 className="w-full rounded-md border border-transparent bg-indigo-600 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
               >
                 Checkout
