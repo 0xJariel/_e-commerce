@@ -1,6 +1,5 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
-import largeBowl from "../assets/Bowls/large_bowl.jpg";
 import smallBowl from "../assets/Bowls/small_bowl.jpg";
 import porcelinMug from "../assets/cups/porcelin_mug.jpg";
 import earthMug from "../assets/cups/earth_mug.jpg";
@@ -12,6 +11,8 @@ import saltAndPepperCellars from "../assets/misc/salt_and_pepper_cellars.webp";
 import angledSaltCellar from "../assets/misc/angled_salt_cellar.webp";
 import oilAndVinegarDispenser from "../assets/oil_dispensers/oil_and_vinegar_dispenser.webp";
 import oliveOilDispenser from "../assets/oil_dispensers/olive_oil_dispenser.webp";
+import largeBowl from "../assets/Bowls/large_bowl.jpg";
+
 
 function getData(filter) {
   // Your dataSet array here
