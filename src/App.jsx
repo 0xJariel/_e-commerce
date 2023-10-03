@@ -4,10 +4,6 @@ import Navbar from "./components/navbar/Navbar";
 import { Outlet } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import { v4 as uuidv4 } from "uuid";
-import soapDispenser from "./assets/Bowls/bowl_set.jpg";
-import plate from "./assets/Bowls/bowl_set.jpg";
-import plate2 from "./assets/Bowls/bowl_set.jpg";
-
 import getData from "./data/data";
 
 function App() {
