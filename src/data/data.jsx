@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import smallBowl from "../../public/assets/bowls/smallBowl.jpg";
-import largeBowl from "../../public/assets/Bowls/largeBowl.jpg";
+// import largeBowl from "../../public/assets/Bowls/largeBowl.jpg";
 import porcelinMug from "../../public/assets/cups/porcelinMug.jpg";
 import earthMug from "../../public/assets/cups/earth_mug.jpg";
 import utensilsCup from "../../public/assets/cups/utensils_cup.jpg";
@@ -70,7 +70,7 @@ function getData(filter) {
       type: "bowl",
       href: "#",
       price: 22,
-      imageSrc: largeBowl,
+      // imageSrc: largeBowl,
       imageAlt:
         "Olive drab green insulated bottle with flared screw lid and flat top.",
       rating: 4,
@@ -78,7 +78,7 @@ function getData(filter) {
         {
           id: 1,
           name: "Angled view",
-          src: largeBowl,
+          // src: largeBowl,
           alt: "Angled front view with bag zipped and handles upright.",
         },
         // More images...
