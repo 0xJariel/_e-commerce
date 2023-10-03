@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
-import smallBowl from "../../public/assets/bowls/small_bowl.jpg";
-import porcelinMug from "../../public/assets/cups/porcelin_mug.jpg";
+import smallBowl from "../../public/assets/bowls/smallBowl.jpg";
+import porcelinMug from "../../public/assets/cups/porcelinMug.jpg";
 import earthMug from "../../public/assets/cups/earth_mug.jpg";
 import utensilsCup from "../../public/assets/cups/utensils_cup.jpg";
 import spicePummel from "../../public/assets/misc/spice_pummel.webp";
@@ -10,7 +10,7 @@ import saltAndPepperCellars from "../../public/assets/misc/salt_and_pepper_cella
 import angledSaltCellar from "../../public/assets/misc/angled_salt_cellar.webp";
 import oilAndVinegarDispenser from "../../public/assets/oil_dispensers/oil_and_vinegar_dispenser.webp";
 import oliveOilDispenser from "../../public/assets/oil_dispensers/olive_oil_dispenser.webp";
-import largeBowl from "../../public/assets/Bowls/large_bowl.jpg";
+import largeBowl from "../../public/assets/Bowls/largeBowl.jpg";
 
 function getData(filter) {
   // Your dataSet array here
