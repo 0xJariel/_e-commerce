@@ -1,8 +1,8 @@
 import React from "react";
-import Intro from "../intro_section/Intro";
-import Highlights from "../highlights_section/Highlights";
-import Popular from "../popular_section/Popular";
-import Blog from "../blog_section/blog";
+import Intro from "../components/Intro";
+import Highlights from "../components/Highlights";
+import Popular from "../components/Popular";
+import Blog from "../components/blog";
 import { useOutletContext } from "react-router-dom";
 
 function Home() {

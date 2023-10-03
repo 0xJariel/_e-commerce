@@ -69,7 +69,7 @@ export default function Cart() {
     const total = taxEstimate + shippingEstimate + subTotal;
     console.log(subTotal, taxEstimate, shippingEstimate);
     const formattedTotal = total.toFixed(2);
-    setOrderTotal(total);
+    setOrderTotal(formattedTotal);
   };
 
   const deleteItem = (e, id) => {

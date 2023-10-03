@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/Navbar";
 import { Outlet } from "react-router-dom";
-import Footer from "./components/footer/Footer";
+import Footer from "./components/Footer";
 import { v4 as uuidv4 } from "uuid";
 import getData from "./data/data";
 
@@ -145,7 +145,15 @@ function App() {
 
   return (
     <div className="grid w-full ">
-      <Navbar cart={cart} />
+      <Navbar
+        cart={cart}
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 100,
+          backgroundColor: "white",
+        }}
+      />
       <Outlet
         context={[
           products,
@@ -154,6 +162,7 @@ function App() {
           setDisplayProduct,
           cart,
           setCart,
+          setProducts,
         ]}
       />
       <Footer />

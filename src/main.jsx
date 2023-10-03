@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import Home from "./components/home_page/Home.jsx";
+import Home from "./page/Home.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Shop from "./components/shop_page/Shop.jsx";
-import Cart from "./components/cart_page/Cart.jsx";
-import ErrorPage from "./components/error_page/ErrorPage.jsx";
-import Product from "./components/product_page/Product.jsx";
+import Shop from "./page/Shop.jsx";
+import Cart from "./page/Cart.jsx";
+import ErrorPage from "./page/ErrorPage.jsx";
+import Product from "./page/Product.jsx";
 
 const router = createBrowserRouter([
   {

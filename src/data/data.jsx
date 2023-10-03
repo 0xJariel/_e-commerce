@@ -1,4 +1,3 @@
-import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import smallBowl from "../assets/Bowls/small_bowl.jpg";
 import porcelinMug from "../assets/cups/porcelin_mug.jpg";
@@ -12,9 +11,11 @@ import angledSaltCellar from "../assets/misc/angled_salt_cellar.webp";
 import oilAndVinegarDispenser from "../assets/oil_dispensers/oil_and_vinegar_dispenser.webp";
 import oliveOilDispenser from "../assets/oil_dispensers/olive_oil_dispenser.webp";
 import largeBowl from "../assets/Bowls/large_bowl.jpg";
+import { data } from "autoprefixer";
 
 function getData(filter) {
   // Your dataSet array here
+  console.log();
   const dataSet = [
     {
       id: uuidv4(),
@@ -47,9 +48,7 @@ function getData(filter) {
           selectedColor: "ring-gray-500",
         },
       ],
-      description: `
-          The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.
-        `,
+      description: `A small porcelain bowl that you probably don't need, but hey, it's cute.`,
       details: [
         {
           name: "Features",
@@ -98,9 +97,9 @@ function getData(filter) {
           selectedColor: "ring-gray-500",
         },
       ],
-      description: `
-          The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.
-        `,
+      description:
+        "A large porcelain bowl big enough to serve a feast for one... or a mouse.",
+
       details: [
         {
           name: "Features",
@@ -149,9 +148,9 @@ function getData(filter) {
           selectedColor: "ring-gray-500",
         },
       ],
-      description: `
-                The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.
-              `,
+      description:
+        "An elegant porcelain mug because plain mugs are just too boring for you.",
+
       details: [
         {
           name: "Features",
@@ -200,9 +199,9 @@ function getData(filter) {
           selectedColor: "ring-gray-500",
         },
       ],
-      description: `
-                The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.
-              `,
+      description:
+        "An earth-themed mug for when you want to feel closer to nature with your coffee.",
+
       details: [
         {
           name: "Features",
@@ -251,9 +250,9 @@ function getData(filter) {
           selectedColor: "ring-gray-500",
         },
       ],
-      description: `
-                The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.
-              `,
+      description:
+        "A stylish utensils cup because your kitchen desperately needed more sophistication.",
+
       details: [
         {
           name: "Features",
@@ -302,9 +301,9 @@ function getData(filter) {
           selectedColor: "ring-gray-500",
         },
       ],
-      description: `
-                The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.
-              `,
+      description:
+        "A handy garlic scraper for those moments when you forget that knives exist.",
+
       details: [
         {
           name: "Features",
@@ -353,9 +352,9 @@ function getData(filter) {
           selectedColor: "ring-gray-500",
         },
       ],
-      description: `
-                The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.
-              `,
+      description:
+        "A spice pummel because, clearly, your spices need a good pummeling.",
+
       details: [
         {
           name: "Features",
@@ -404,9 +403,9 @@ function getData(filter) {
           selectedColor: "ring-gray-500",
         },
       ],
-      description: `
-                The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.
-              `,
+      description:
+        "An earthy salt cellar because ordinary salt shakers just won't do.",
+
       details: [
         {
           name: "Features",
@@ -456,8 +455,11 @@ function getData(filter) {
           selectedColor: "ring-gray-500",
         },
       ],
-      description: `
-                The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.
+      description:
+        "An angled salt cellar because why store salt in a straight container like a normal person?",
+
+      altDescription: `
+                Have you ever wondered: "boy my salt lives in a terrribly produced home. I don't think they like it there much, probably." Well... you're not going to believe this but... Do I Have News For You! we found it! the home of your salts dreams.
               `,
       details: [
         {
@@ -508,9 +510,9 @@ function getData(filter) {
           selectedColor: "ring-gray-500",
         },
       ],
-      description: `
-                The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.
-              `,
+      description:
+        "Salt and pepper cellars because shaking spices is so last century.",
+
       details: [
         {
           name: "Features",
@@ -560,9 +562,9 @@ function getData(filter) {
           selectedColor: "ring-gray-500",
         },
       ],
-      description: `
-                The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.
-              `,
+      description:
+        "Oil and vinegar dispensers because who pours oil and vinegar straight from the bottles anymore?",
+
       details: [
         {
           name: "Features",
@@ -612,9 +614,9 @@ function getData(filter) {
           selectedColor: "ring-gray-500",
         },
       ],
-      description: `
-                The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.
-              `,
+      description:
+        "An earthy olive oil dispenser because your olive oil deserves a special home.",
+
       details: [
         {
           name: "Features",
@@ -633,23 +635,8 @@ function getData(filter) {
     },
   ];
   // Check if the filter is not provided or empty
-  if (!filter) {
-    return dataSet;
-  }
 
-  // Filter the dataSet based on the filter value
-  const filteredData = dataSet.filter((item) => {
-    if (filter === "misc") {
-      return item.type === "misc";
-    } else if (filter === "bowl") {
-      return item.type === "bowl";
-    } else if (filter === "cup") {
-      return item.type === "cup";
-    }
-    // You can add more conditions if needed
-  });
-
-  return filteredData;
+  return dataSet;
 }
 
 export default getData;
