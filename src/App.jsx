@@ -3,7 +3,6 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer";
-import { v4 as uuidv4 } from "uuid";
 import getData from "./data/data";
 
 function App() {
@@ -145,15 +144,7 @@ function App() {
 
   return (
     <div className="grid w-full ">
-      <Navbar
-        cart={cart}
-        style={{
-          position: "sticky",
-          top: 0,
-          zIndex: 100,
-          backgroundColor: "white",
-        }}
-      />
+      <Navbar cart={cart} />
       <Outlet
         context={[
           products,
